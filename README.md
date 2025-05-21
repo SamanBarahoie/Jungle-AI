@@ -1,70 +1,98 @@
-# Jungle-AI
-A Collection of Language Models in the Wild
 
+# 🐾 Jungle-AI
 
+*A Collection of Lightweight Language Models in the Wild*
 
-Welcome to **Jungle AI**, a curated repository of efficient and scalable **language models** trained from scratch on small datasets, optimized for research, education, and rapid experimentation.
+Welcome to **Jungle-AI** — a curated collection of efficient, small-scale **language models** built from scratch, optimized for **low-resource training**, **educational use**, and **rapid experimentation**.
 
-This repository centralizes efforts across the following projects:
-
-* 🔬 [`nano_llama-3.1`](https://github.com/SamanBarahoie/nano_llama-3.1): A faithful re-implementation of LLaMA-style transformer blocks, optimized for training on TinyStories. Includes:
-
-  * Causal self-attention with RoPE (Rotary Position Embeddings)
-  * Streaming dataset support
-  * Flash attention (optional)
-  * Full test suite (`pytest + coverage`)
-  * Modular and reproducible training loop with mixed precision
-
-* 🧠 [`NanoLanguageModel`](https://github.com/SamanBarahoie/NanoLanguageModel): Minimalistic PyTorch implementation of a GPT-style model, focused on readability and educational value. Includes:
-
-  * Basic tokenizer support
-  * Vanilla transformer training loop
-  * Early experiments with tiny datasets
+This repository centralizes open, modular implementations of transformer-based models trained on small yet meaningful datasets like TinyStories.
 
 ---
 
-### 🧠 Goals
+## 🌴 Projects
 
-* 🪶 **Lightweight**: All models are trainable on a single GPU (rtx 3090 or even lower-spec).
-* 🧪 **Experimental**: Ideal for quick iterations, toy tasks, and conceptual learning.
-* 🧱 **Modular**: Easy to extend components such as attention, normalization, positional encodings, etc.
+### 🔬 [`nano_llama-3.1`](https://github.com/SamanBarahoie/nano_llama-3.1)
 
----
+A faithful re-implementation of the LLaMA 3.1 architecture, designed for clarity and customization.
 
+**Key Features:**
 
-
-
-
-### 🧪 Datasets
-
-Currently supported datasets:
-
-* 🧒 TinyStories (default for training and validation)
-* 🧾 Custom tokenized `.pt` files
-* (Soon) WikiText and Code datasets
+* Causal self-attention with RoPE (Rotary Position Embeddings)
+* FlashAttention (optional, toggleable)
+* Mixed-precision training (fp16/bf16)
+* Streaming dataset support (efficient with large files)
+* Fully testable (pytest + coverage)
+* Reproducible and modular training loop
 
 ---
 
-### 📊 Evaluation
+### 🦙 [`llama4`](https://github.com/SamanBarahoie/llama4)
 
-Coming soon:
+A **compact LLaMA-style transformer** with \~771M parameters, trained from scratch on TinyStories.
 
-* Perplexity and accuracy benchmarks
-* BLEU-style text generation tests
-* Synthetic reasoning tasks
+**Highlights:**
+
+* 12 transformer blocks with MoE at layer 6 (6 experts)
+* 32 attention heads (8 key-value heads)
+* Custom tokenizer with vocab size = 10,000
+* Trained for 4 epochs on \~465M tokens
+* Final training loss: `1.66`, validation loss: `1.49`
+
+📄 Full documentation in [README](https://github.com/SamanBarahoie/llama4/blob/main/README.md)
 
 ---
 
-### 📬 Contact & Contributions
+### 🧠 [`NanoLanguageModel`](https://github.com/SamanBarahoie/NanoLanguageModel)
 
-Open to collaborations and contributions. If you're building or extending compact language models for low-resource settings, feel free to open a PR or issue.
+A minimalistic PyTorch GPT-style language model ideal for education and experimentation.
 
+**Highlights:**
+
+* Vanilla transformer implementation
+* Lightweight tokenizer
+* Clean training loop
+* Focused on readability and conceptual learning
+
+---
+
+## 🧠 Philosophy & Goals
+
+* 🪶 **Lightweight**: Trainable on a single GPU (e.g., RTX 3090 or lower)
+* 🧪 **Experimental**: Ideal for toy datasets, rapid prototyping, and ablation studies
+* 🧱 **Modular**: Easily replace components (e.g., attention, norm, embeddings)
+* 📚 **Educational**: Code is simple, readable, and documented
+
+---
+
+## 📚 Supported Datasets
+
+Currently integrated:
+
+* 🧒 **TinyStories** (default)
+* 📄 Custom `.pt` tokenized corpora
+* 📘 (Coming Soon) WikiText and code datasets
+
+---
+
+## 📊 Evaluation (Planned)
+
+* Perplexity and loss benchmarks
+* Text generation metrics (BLEU-style, syntactic plausibility)
+* Synthetic reasoning benchmarks
+
+---
+
+## 🤝 Contributions & Contact
+
+We welcome collaboration from ML engineers, students, and researchers interested in small-scale or interpretable language models.
+
+📬 **Pull requests** and **issues** are open!
 🐦 Twitter: [@SamanBarahoie](https://twitter.com/SamanBarahoie)
 
 ---
 
-### 🧩 License
+## 🧩 License
 
-MIT License. Use freely with attribution.
+MIT License — free for academic, educational, and commercial use with attribution.
 
 ---
