@@ -26,7 +26,7 @@ A faithful re-implementation of the LLaMA 3.1 architecture, designed for clarity
 
 ---
 
-### 🦙 [`llama4`](https://github.com/SamanBarahoie/llama4)
+### 🦙 [`llama4`](https://github.com/SamanBarahoie/-Llama-4)
 
 A **compact LLaMA-style transformer** with \~771M parameters, trained from scratch on TinyStories.
 
