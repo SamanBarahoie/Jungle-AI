@@ -38,7 +38,7 @@ A **compact LLaMA-style transformer** with \~771M parameters, trained from scrat
 * Trained for 4 epochs on \~465M tokens
 * Final training loss: `1.66`, validation loss: `1.49`
 
-📄 Full documentation in [README](https://github.com/SamanBarahoie/llama4/blob/main/README.md)
+📄 Full documentation in [README](https://github.com/SamanBarahoie/-Llama-4)
 
 ---
 
