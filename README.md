@@ -11,6 +11,27 @@ This repository centralizes open, modular implementations of transformer-based m
 
 ## 🌴 Projects
 
+---
+
+### 🐋 [`deepseek_repro`](https://github.com/SamanBarahoie/DeepSeek)
+
+A **from-scratch reimplementation** of the official **DeepSeek-V2** model based purely on its research paper — with support for **Mixture of Experts (MoE)**, **LoRA fine-tuning**, and modular design.
+
+> 🐋 While DeepSeek is powerful, reproducing it from paper is *not* trivial. The official codebase is monolithic, under-documented, and extremely hard to follow. This project distills the core architectural ideas into clean, testable modules — so you can truly understand how DeepSeek works, not just run it.
+
+**Highlights:**
+
+* Faithful re-creation of DeepSeek-V2 with modular PyTorch code
+* Mixture-of-Experts routing with dynamic gating
+* Rotary Embeddings, RMSNorm, Causal Masking, Efficient Caching
+* Supports training from scratch and LoRA-based fine-tuning
+* \~1B parameter version trained on a **single RTX 3090 (24GB)**
+* Lightweight 3M model runs smoothly on **Google Colab**
+* Full model size: **\~22GB**
+
+📄 Based on [DeepSeek-V2: Towards Massively Multilingual Language Models with Expert Mixture](https://arxiv.org/pdf/2405.04434)
+
+---
 ### 🔬 [`nano_llama-3.1`](https://github.com/SamanBarahoie/nano_llama-3.1)
 
 A faithful re-implementation of the LLaMA 3.1 architecture, designed for clarity and customization.
