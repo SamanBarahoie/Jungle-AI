@@ -22,7 +22,7 @@ A **from-scratch reimplementation** of the official **DeepSeek-V2** model based 
 **Highlights:**
 
 * Faithful re-creation of DeepSeek-V2 with modular PyTorch code
-* Mixture-of-Experts routing with dynamic gating
+* Mixture-of-Experts routing 
 * Rotary Embeddings, RMSNorm, Causal Masking, Efficient Caching
 * Supports training from scratch and LoRA-based fine-tuning
 * \~1B parameter version trained on a **single RTX 3090 (24GB)**
