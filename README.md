@@ -27,7 +27,7 @@ A **from-scratch reimplementation** of the official **DeepSeek-V2** model based 
 * Supports training from scratch and LoRA-based fine-tuning
 * \~1B parameter version trained on a **single RTX 3090 (24GB)**
 * Lightweight 3M model runs smoothly on **Google Colab**
-* Full model size: **\~22GB**
+* Full model size: **\~22GB** vram
 
 📄 Based on [DeepSeek-V2: Towards Massively Multilingual Language Models with Expert Mixture](https://arxiv.org/pdf/2405.04434)
 
