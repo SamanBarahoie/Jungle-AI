@@ -15,9 +15,9 @@ This repository centralizes open, modular implementations of transformer-based m
 
 ### 🐋 [`deepseek_repro`](https://github.com/SamanBarahoie/DeepSeek)
 
-A **from-scratch reimplementation** of the official **DeepSeek-V2** model based purely on its research paper — with support for **Mixture of Experts (MoE)**, **LoRA fine-tuning**, and modular design.
+A **from-scratch reimplementation** of the official **DeepSeek-V2** model based purely on its research paper  with support for **Mixture of Experts (MoE)**, **LoRA fine-tuning**, and modular design.
 
-> 🐋 While DeepSeek is powerful, reproducing it from paper is *not* trivial. The official codebase is monolithic, under-documented, and extremely hard to follow. This project distills the core architectural ideas into clean, testable modules — so you can truly understand how DeepSeek works, not just run it.
+> 🐋 While DeepSeek is powerful, reproducing it from paper is *not* trivial. The official codebase is monolithic, under-documented, and extremely hard to follow. This project distills the core architectural ideas into clean, testable modules  so you can truly understand how DeepSeek works, not just run it.
 
 **Highlights:**
 
@@ -49,7 +49,7 @@ A faithful re-implementation of the LLaMA 3.1 architecture, designed for clarity
 
 ### 🦙 [`llama4`](https://github.com/SamanBarahoie/-Llama-4)
 
-A **compact LLaMA-style transformer** with \~771M parameters, trained from scratch on TinyStories.
+A **compact LLaMA 4 transformer** with \~771M parameters, trained from scratch on TinyStories.
 
 **Highlights:**
 
@@ -63,9 +63,9 @@ A **compact LLaMA-style transformer** with \~771M parameters, trained from scrat
 
 ---
 
-### 🧠 [`NanoLanguageModel`](https://github.com/SamanBarahoie/NanoLanguageModel)
+### 🧠 [`Nanogpt2`](https://github.com/SamanBarahoie/NanoLanguageModel)
 
-A minimalistic PyTorch GPT-style language model ideal for education and experimentation.
+A minimalistic PyTorch GPT-2 language model ideal for education and experimentation.
 
 **Highlights:**
 
